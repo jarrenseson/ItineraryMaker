@@ -96,8 +96,9 @@ export async function changePassword(credentials: { email: string; password: str
 export async function addEvent(eventData: {
   owner: string;
   name: string;
-  date: number;
-  time: number;
+  date: string;
+  startTime: string;
+  endTime: string;
   location: string;
   description: string;
 }) {
@@ -106,9 +107,11 @@ export async function addEvent(eventData: {
       owner: eventData.owner,
       name: eventData.name,
       date: eventData.date,
-      time: eventData.time,
+      startTime: eventData.startTime,
+      endTime: eventData.endTime,
       location: eventData.location,
       description: eventData.description,
     },
   });
+  redirect('/');
 }

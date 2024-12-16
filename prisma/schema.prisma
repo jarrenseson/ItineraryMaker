@@ -45,11 +45,12 @@ model Stuff {
 }
 
 model Event {
-  id          Int    @id @default(autoincrement())
+  id          Int     @id @default(autoincrement())
   owner       String
   name        String
-  date        Int
-  time        Int
-  location    String
-  description String
+  date        String
+  startTime   String
+  endTime     String
+  location    String?
+  description String?
 }
