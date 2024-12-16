@@ -11,10 +11,10 @@ generator client {
 datasource db {
   provider = "postgresql"
   // for local development
-  url      = env("DATABASE_URL")
+  url      = "postgres://neondb_owner:qECeB9rlQnz5@ep-twilight-truth-a6tihias-pooler.us-west-2.aws.neon.tech/neondb?sslmode=require"
   // for Vercel
-  // url       = env("POSTGRES_PRISMA_URL")
-  // directUrl = env("POSTGRES_URL_NON_POOLING")
+  // url       = "postgres://neondb_owner:qECeB9rlQnz5@ep-twilight-truth-a6tihias-pooler.us-west-2.aws.neon.tech/neondb?pgbouncer=true&connect_timeout=15&sslmode=require"
+  // directUrl = "postgres://neondb_owner:qECeB9rlQnz5@ep-twilight-truth-a6tihias.us-west-2.aws.neon.tech/neondb?sslmode=require"
 }
 
 enum Role {
