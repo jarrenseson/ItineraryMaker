@@ -92,3 +92,23 @@ export async function changePassword(credentials: { email: string; password: str
     },
   });
 }
+
+export async function addEvent(eventData: {
+  owner: string;
+  name: string;
+  date: number;
+  time: number;
+  location: string;
+  description: string;
+}) {
+  await prisma.event.create({
+    data: {
+      owner: eventData.owner,
+      name: eventData.name,
+      date: eventData.date,
+      time: eventData.time,
+      location: eventData.location,
+      description: eventData.description,
+    },
+  });
+}
