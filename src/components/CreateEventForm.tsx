@@ -14,7 +14,8 @@ const onSubmit = async (data: {
   owner: string;
   name: string;
   date: string;
-  time: string;
+  startTime: string;
+  endTime: string;
   location: string;
   description: string;
 }) => {
