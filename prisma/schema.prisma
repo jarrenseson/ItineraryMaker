@@ -43,3 +43,13 @@ model Stuff {
   condition Condition
   owner     String
 }
+
+model Event {
+  id          Int    @id @default(autoincrement())
+  owner       String
+  name        String
+  date        Int
+  time        Int
+  location    String
+  description String
+}
