@@ -7,7 +7,9 @@ const Home = () => (
       <Row className="align-items-center justify-content-center">
         <Col md={6}>
           <h1 className="display-3">Plan Your Dream Trip with Ease</h1>
-          <p className="lead">Explore our easy-to-use itinerary maker and craft the perfect travel plans for your next adventure.</p>
+          <p className="lead">
+            Explore our easy-to-use itinerary maker and craft the perfect travel plans for your next adventure.
+          </p>
           <a href="/createEvent"><Button variant="primary" size="lg">Get Started</Button></a>
         </Col>
       </Row>
